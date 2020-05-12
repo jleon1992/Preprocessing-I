@@ -1,1 +1,253 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Merriweather Regular'), local('Merriweather-Regular'), url(https://fonts.gstatic.com/s/merriweather/v21/u-440qyriQwlOrhSvowK_l5Oew.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotoslab/v11/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojISWaA.ttf) format('truetype');
+}
+h1 {
+  font-family: 'Merriweather', serif;
+  color: white;
+  font-size: 3rem;
+}
+h2 {
+  font-family: h1;
+  color: lightslategrey;
+  font-size: 3rem;
+}
+p {
+  font-size: 1.2rem;
+  margin: 2% 0;
+  line-height: 3rem;
+}
+a {
+  font-family: 'Merriweather', serif;
+  font-size: 1.5rem;
+  padding: 2%;
+  width: 25%;
+  text-decoration: none;
+  color: lightslategrey;
+}
+li {
+  font-size: 1.5rem;
+  margin: 2%;
+}
+b {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 2%;
+}
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  background: white;
+}
+nav .links {
+  width: 50%;
+  display: flex;
+}
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/media/banner.jpg");
+  /* Set a specific height */
+  height: 80vh;
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero-image .profile {
+  border-radius: 50%;
+  width: 40%;
+  padding: 5%;
+}
+.hero-image .main-titles {
+  width: 65%;
+}
+.hero-image .main-titles h1 {
+  padding: 5%;
+  font-size: 10rem;
+}
+.hero-image .main-titles p {
+  color: white;
+}
+.content {
+  display: flex;
+}
+.content .box {
+  padding: 15%;
+}
+.content .box .line {
+  border-bottom: 15px solid lightslategrey;
+  width: 30%;
+  margin: 5% 0;
+}
+.content .box p {
+  font-size: 1.5rem;
+}
+.content .left {
+  width: 40%;
+}
+.content .right {
+  width: 60%;
+  background: blanchedalmond;
+}
+.content .right .box {
+  padding: 9%;
+}
+.content .right .box .line {
+  border-bottom: 15px solid lightslategrey;
+  width: 30%;
+  margin: 5% 0;
+}
+.content .right .box p {
+  font-size: 1.5rem;
+}

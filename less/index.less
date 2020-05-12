@@ -56,4 +56,127 @@ table {
 html, body {
     height: 100%;
 }
+.flex(){
+	display: flex;
+}
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto+Slab&display=swap');
+@h1: 'Merriweather', serif;
+@p: 'Roboto Slab', serif;
+@grey: lightslategrey;
 
+	  
+h1{
+	font-family: @h1;
+	color: white;
+	font-size: 3rem;
+}	
+h2{
+	font-family: h1;
+	color: @grey;
+	font-size: 3rem;
+}
+p{
+	// font-family: @p;
+	font-size: 1.2rem;
+	margin: 2% 0;
+	line-height: 3rem;
+}  
+a{
+	font-family: @h1;
+	font-size: 1.5rem;
+	padding: 2%;
+	width: 25%;
+	text-decoration: none;
+	color: @grey;
+}
+li{
+	font-size: 1.5rem;
+	margin: 2%;
+}
+b{
+	font-weight: bold;
+	font-size: 1.5rem;
+	margin-bottom: 2%;
+}
+		
+	  
+// }
+nav{
+	.flex();
+	width: 100%;
+	justify-content: flex-end;
+	background: white;
+	.links{
+		width: 50%;
+		.flex();
+	}
+}
+.hero-image {
+	/* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/media/banner.jpg");
+  
+	/* Set a specific height */
+	height: 80vh;
+
+  
+	/* Position and center the image to scale nicely on all screens */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	.profile{
+		border-radius: 50%;
+		width: 40%;
+		padding: 5%;
+	}
+	.main-titles{
+		width: 65%;
+		h1{
+			padding: 5%;
+			font-size: 10rem;
+		}
+		p{
+			color: white;
+
+		}
+	}
+  }
+.content{
+	.flex();
+	.box{
+		padding: 15%;
+		// border: 5px solid blue;
+		.line{
+			border-bottom: 15px solid @grey;
+			width: 30%;
+			margin: 5% 0;
+		}
+		p{
+			font-size: 1.5rem;
+		}
+	}
+	.left{
+		width:40%;
+		
+	}
+	.right{
+		width:60%;
+		background: blanchedalmond;
+		.box{
+			padding: 9%;
+			// border: 5px solid blue;
+			.line{
+				border-bottom: 15px solid @grey;
+				width: 30%;
+				margin: 5% 0;
+			}
+			p{
+				font-size: 1.5rem;
+			}
+		}
+	}
+	
+}
